@@ -1,4 +1,4 @@
-FROM golang:1.13-alpine as builder
+FROM arm32v7/golang:1.13-alpine as builder
 
 RUN apk --no-cache --no-progress add git ca-certificates tzdata make \
     && update-ca-certificates \
